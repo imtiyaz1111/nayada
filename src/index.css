@@ -1,0 +1,114 @@
+/* Topbar */
+.topbar {
+  background: #1c2536;
+  color: white;
+}
+
+.btn-wallet {
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-payin {
+  background: #34a853;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-profile {
+  background: #fff;
+  color: #333;
+  font-weight: 500;
+  border: none;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  background: #1a73e8;
+  transition: all 0.3s;
+  z-index: 1050;
+  color: white;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.submenu .nav-link {
+  font-size: 14px;
+  padding-left: 30px;
+}
+
+/* Content */
+.content {
+  margin-left: 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+  transition: margin-left 0.3s;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    left: 0;
+  }
+  .content {
+    margin-left: 250px;
+  }
+}
+
+/* Dashboard Cards */
+.dash-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+.bg-success-custom {
+  background: #1abc9c;
+}
+.bg-warning-custom {
+  background: #f1c40f;
+}
+.bg-primary-custom {
+  background: #8e44ad;
+}
+.bg-dark-custom {
+  background: #34495e;
+}
+
+.dash-card .value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Placeholder for charts */
+.dash-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  min-height: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
