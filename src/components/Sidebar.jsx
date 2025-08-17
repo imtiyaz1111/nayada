@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <div className={`sidebar ${isOpen ? "active" : ""}`}>
       {/* Logo Section */}
       <div className="logo-section text-center p-2 border-bottom position-relative">
-        <img src={logo} alt="logo" style={{ height: "35px" }} />
+        <img src={logo} alt="logo" style={{ height: "50px",width:"200px" }} />
 
         {/* Close btn for mobile */}
         <button

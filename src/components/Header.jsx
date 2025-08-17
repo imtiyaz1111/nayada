@@ -2,7 +2,8 @@ import React from "react";
 
 const Header = ({ toggleSidebar }) => {
   return (
-    <nav className="navbar navbar-dark bg-dark px-3 d-flex justify-content-between align-items-center">
+    <nav className="navbar navbar-dark bg-dark px-3 d-flex justify-content-between align-items-center sticky-top">
+      {/* Sidebar toggle (only on mobile) */}
       <button
         className="btn btn-outline-light d-md-none"
         onClick={toggleSidebar}
